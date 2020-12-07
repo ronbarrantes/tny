@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 
 describe('First test', () => {
-  it('should lowercase the string hello', () => {
+  it('should lowercase the string hello world', () => {
     const helloWorld = 'HeLlO, WorLd!'
     const lowerHelloWorld = helloWorld.toLowerCase()
     assert.strictEqual(lowerHelloWorld, 'hello, world!', 'should resolve to "hello, world!"')
