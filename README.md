@@ -1,25 +1,21 @@
-# TypeScript Boilerplate
+# Tny (A tiny url generator)
 
-This has a VERY basic boilerplate with a nice little package.json
+This is going to be a tiny url generator for my website because it'll be nice to have one
 
-## How to run
+## Plan
+An api that assigns the tiny urls:
+- Api will check if the tiny url is in use
+- Add the api
+- Automatically generate a 6 digit url
+- Allow the user to pick their own url 
 
-1. Install all the packages
+The redirects for the urls:
+- When the url is hit then it will redirect to the large url
+- If url doesn't exist it will send the person to the url generator and ask to assign a url
 
-```npm i```
-
-2. Run the watcher
-
-```npm run watch```
-
-3. In a separate terminal, run the built file
-
-```npm start```
-
-There are also scripts to *clean* and *build* the project
-
-## Notes
-
-- Files will automatically lint on committing, you may bypass this by committing with the flag `--no-verify`
-- Make sure you have a TypeScript linter extension such as [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
-- Also [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) if you don't have it
+## Things I want
+- I need to figure out what is better/cheaper DynamoDB or MongoDB (though I'd like to learn to use Dynamo)
+- I would like to have this project working just of off lambdas instead of some continuously running server (probably start with the server tho and then convert)
+- I need some kind of way to generate a schema
+- I'd like to add a scrapper that checks the url and automatically adds information about the link (like title and stuff)
+- I'd like some kind of way to prevent people from creating too many links at the same time in case it gets abused (like some throttling and debouncing)
